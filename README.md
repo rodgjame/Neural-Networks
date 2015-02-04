@@ -1,4 +1,4 @@
 Neural-Networks
 ===============
 
-Neural network related projects.
+Neural network related project.
