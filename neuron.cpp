@@ -1,11 +1,18 @@
 #include "neuron.h"
 
+/**
+ * @brief Neuron::Neuron Default constructor.
+ */
 Neuron::Neuron()
 {
     _numInputs = 0;
     srand(time(NULL));
 }
 
+/**
+ * @brief Neuron::Neuron Constructor that will set the number of inputs a neuron has on creation.
+ * @param numInputs Number of inputs for this neuron.
+ */
 Neuron::Neuron(int numInputs)
 {
     _numInputs = numInputs;
@@ -16,6 +23,10 @@ Neuron::Neuron(int numInputs)
     }
 }
 
+/**
+ * @brief Neuron::SetNumberOfInputs Sets the number of inputs a neuron has.
+ * @param numInputs Number of inputs for this neuron.
+ */
 void Neuron::SetNumberOfInputs(int numInputs)
 {
     _numInputs = numInputs;
