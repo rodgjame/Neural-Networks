@@ -4,9 +4,11 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 HEADERS += \
-    neuron.h
+    neuron.h \
+    neurallayer.h
 
 SOURCES += \
     neuron.cpp \
-    main.cpp
+    main.cpp \
+    neurallayer.cpp
 
