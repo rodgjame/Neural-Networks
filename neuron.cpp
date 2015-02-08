@@ -42,18 +42,29 @@ void Neuron::SetWeights(vector<double> weights)
     }
 }
 
+/**
+ * @brief Neuron::GetNumberOfInputs Returns the number of inputs coming into this neuron
+ * @return Number of inputs.
+ */
 int Neuron::GetNumberOfInputs()
 {
     return _numInputs;
 }
 
+/**
+ * @brief Neuron::GetWeights Returns the weights of the neron's inputs.
+ * @return Vector containing the weights of the neron's inputs.
+ */
 vector<double> Neuron::GetWeights()
 {
     return _weights;
 }
 
+/**
+ * @brief Neuron::GenerateRandomNumber Returns a random number between -0.5 to 0.5 for weight initialization
+ * @return random number between -0.5 to 0.5
+ */
 double Neuron::GenerateRandomNumber()
 {
     double randomDouble = (double)rand() / RAND_MAX;
     return RAND_LOWERB + randomDouble * (RAND_UPPERB - RAND_LOWERB);
-}
